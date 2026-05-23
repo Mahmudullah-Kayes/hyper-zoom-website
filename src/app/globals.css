@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --background: #09090b; /* Zinc-950: More visible than super black */
+  --foreground: #fafafa; /* Zinc-50: Soft white */
+  --accent: #007AFF; /* Electric Blue */
+  --accent-foreground: #ffffff;
+  --muted: #18181b; /* Zinc-900: Dark ash for components/cards */
+  --muted-foreground: #a1a1aa; /* Zinc-400: Clearer gray for descriptions */
+  --border: rgba(255, 255, 255, 0.08); /* Subtle but visible borders */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+/* Cinematic Grain - Lowered opacity for cleaner view */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("https://res.cloudinary.com/dqr69stka/image/upload/v1707122119/noise-texture_c9uq2u.png");
+  background-repeat: repeat;
+}
+
+/* UI Definitions */
+.card-glass {
+  background-color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.card-glass:hover {
+  border-color: rgba(0, 122, 255, 0.3);
+  background-color: #1c1c1f;
+}
+
+/* Custom Text Selection */
+::selection {
+  background: var(--accent);
+  color: #FFFFFF;
+}
+
+/* Layout */
+.content-container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Typography Scale Down */
+h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); font-weight: 800; tracking: -0.05em; line-height: 1.1; }
+h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; tracking: -0.04em; line-height: 1.1; }
+h3 { font-size: clamp(1.25rem, 2vw, 1.75rem); font-weight: 700; tracking: -0.02em; }
+p { font-size: 0.95rem; color: var(--muted-foreground); }
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
