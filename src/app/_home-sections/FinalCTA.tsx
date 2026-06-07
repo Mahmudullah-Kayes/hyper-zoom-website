@@ -18,7 +18,7 @@ export function FinalCTA() {
                     className="flex items-center gap-2 mb-10"
                 >
                     <div className="h-[1px] w-8 bg-accent/40" />
-                    <span className="text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-accent/80">HyperZoom Studio</span>
+                    <span className="text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-accent/80">HyprZoom Studio</span>
                     <div className="h-[1px] w-8 bg-accent/40" />
               </motion.div>
 

@@ -1,4 +1,4 @@
-# HyperZoom - Hosting Preparation
+# HyprZoom - Hosting Preparation
 
 To prepare this project for cPanel Node.js hosting:
 

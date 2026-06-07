@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Navbar } from "@/components/shared/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,11 +15,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "HyperZoom | We Edit Videos That Sell",
+  title: "HyprZoom | We Edit Videos That Sell",
   description: "Built for brands that want attention. Focused on performance-driven editing.",
+  icons: {
+    icon: "/logo/hyprzoon.jpeg",
+    shortcut: "/logo/hyprzoon.jpeg",
+    apple: "/logo/hyprzoon.jpeg",
+  },
 };
-
-import { Navbar } from "@/components/shared/Navbar";
 
 export default function RootLayout({
   children,

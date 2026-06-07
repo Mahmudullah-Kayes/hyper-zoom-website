@@ -5,7 +5,7 @@ import { ArrowLeft, ArrowRight, Play } from "lucide-react";
 import { useRef } from "react";
 
 const PROJECTS = [
-  { id: 1, title: "HYPER STUDIO REEL", category: "Color Grading", thumbnail: "/thumb-1.png" },
+  { id: 1, title: "HYPR STUDIO REEL", category: "Color Grading", thumbnail: "/thumb-1.png" },
   { id: 2, title: "VIBRANT SOCIAL", category: "Social Content", thumbnail: "/thumb-2.png" },
   { id: 3, title: "CYBERPUNK NIGHTS", category: "Urban Edit", thumbnail: "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
   { id: 4, title: "MINIMAL AESTHETICS", category: "Product Shot", thumbnail: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },

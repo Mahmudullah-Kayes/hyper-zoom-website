@@ -35,7 +35,7 @@ export function Navbar() {
           href="#"
           className="text-xl md:text-2xl font-black tracking-[-0.05em] uppercase text-white group"
         >
-          HYPER<span className="text-accent underline decoration-accent/40 decoration-[2px] underline-offset-8">ZOOM</span>
+          HYPR<span className="text-accent underline decoration-accent/40 decoration-[2px] underline-offset-8">ZOOM</span>
         </Link>
 
         {/* Anchor Links for Single Page Application */}
